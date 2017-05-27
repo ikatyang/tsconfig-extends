@@ -1,6 +1,6 @@
 {
   "name": "tsconfig-extends",
-  "version": "0.0.0-dev",
+  "version": "1.0.0",
   "description": "load tsconfig compiler-options, support `extends` field",
   "keywords": [
     "compiler-options",
