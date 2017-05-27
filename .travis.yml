@@ -12,6 +12,9 @@ script:
   - if [ "$JOB" = "test" ]; then yarn run test -- --verbose; fi
   - if [ "$JOB" = "test-coverage" ]; then yarn run test -- --verbose --coverage; fi
 
+after_success:
+  - if [ "$JOB" = "test-coverage" ]; then node_modules/.bin/codecov; fi
+
 cache:
   yarn: true
   directories:
