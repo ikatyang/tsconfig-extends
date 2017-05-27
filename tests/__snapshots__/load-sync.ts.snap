@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return correclty (empty) 1`] = `Object {}`;
+
+exports[`should return correclty (general) 1`] = `
+Object {
+  "test:general": true,
+}
+`;
+
+exports[`should return correctly (extends) 1`] = `
+Object {
+  "test:extends": 0,
+  "test:extends:0": true,
+  "test:extends:1": true,
+  "test:extends:2": true,
+}
+`;
+
+exports[`should return correctly with filename and default cwd 1`] = `
+Object {
+  "test:general": true,
+}
+`;
+
+exports[`should return correctly with tsconfig and default cwd 1`] = `
+Object {
+  "test": true,
+  "test:general": true,
+}
+`;

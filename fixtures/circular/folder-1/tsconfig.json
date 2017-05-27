@@ -1,0 +1,7 @@
+{
+  "extends": "../folder-2/tsconfig.json",
+  "compilerOptions": {
+    "test:extends": 1,
+    "test:extends:1": true
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "test:extends": 2,
+    "test:extends:2": true
+  }
+}

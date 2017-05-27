@@ -1,0 +1,32 @@
+{
+  "name": "tsconfig-extends",
+  "version": "0.0.0-dev",
+  "description": "load tsconfig compiler-options, support `extends` field",
+  "keywords": [
+    "compiler-options",
+    "extends",
+    "tsconfig"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --config ./jest.json",
+    "lint": "tslint -p ./tsconfig.json --type-check",
+    "prepublish": "yarn run build",
+    "prebuild": "rm -rf ./lib",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@types/jest": "19.2.3",
+    "@types/node": "7.0.22",
+    "jest": "20.0.4",
+    "ts-jest": "20.0.4",
+    "tslint": "5.3.2",
+    "tslint-config-ikatyang": "0.6.0",
+    "typescript": "2.3.3"
+  },
+  "files": [
+    "/lib/**/*"
+  ]
+}
