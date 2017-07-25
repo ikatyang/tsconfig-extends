@@ -6,5 +6,5 @@
     "strict": true,
     "lib": ["es6"]
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts", "tests/**/*.ts", "gulpfile.ts"]
 }

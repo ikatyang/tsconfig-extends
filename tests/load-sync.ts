@@ -1,4 +1,4 @@
-import {load_config_sync, load_file_sync} from '../src/index';
+import { load_config_sync, load_file_sync } from '../src/index';
 
 const load_fixture = (name: string) =>
   load_file_sync(`./fixtures/${name}/tsconfig.json`);
@@ -28,13 +28,11 @@ it('should return correctly with filename and default cwd', () => {
 
 it('should return correctly with tsconfig and default cwd', () => {
   expect(
-    load_config_sync(
-      {
-        extends: './fixtures/general/tsconfig.json',
-        compilerOptions: {
-          test: true,
-        },
+    load_config_sync({
+      extends: './fixtures/general/tsconfig.json',
+      compilerOptions: {
+        test: true,
       },
-    ),
+    }),
   ).toMatchSnapshot();
 });
