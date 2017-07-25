@@ -10,27 +10,33 @@ export interface CompilerOptions {
   [key: string]: any;
 }
 
-export function load_file_sync(filename: string, cwd: string = process.cwd()): CompilerOptions {
+export function load_file_sync(
+  filename: string,
+  cwd: string = process.cwd(),
+): CompilerOptions {
   const _filename = path.resolve(cwd, filename);
   const json = _load_json_sync(_filename);
   return load_config_sync(json, path.dirname(_filename));
 }
 
-export function load_config_sync(tsconfig: TSConfig, cwd: string = process.cwd()): CompilerOptions {
+export function load_config_sync(
+  tsconfig: TSConfig,
+  cwd: string = process.cwd(),
+): CompilerOptions {
   return _load_config_sync(tsconfig, cwd);
 }
 
 function _load_json_sync(filename: string): TSConfig {
   const content = fs.readFileSync(filename, 'utf8');
-  return /^\s*$/.test(content)
-    ? {}
-    : JSON.parse(content);
+  return /^\s*$/.test(content) ? {} : JSON.parse(content);
 }
 
-function _load_config_sync(tsconfig: TSConfig, cwd: string, stack: string[] = []): CompilerOptions {
-  const {
-    compilerOptions: compiler_options = {},
-  } = tsconfig;
+function _load_config_sync(
+  tsconfig: TSConfig,
+  cwd: string,
+  stack: string[] = [],
+): CompilerOptions {
+  const { compilerOptions: compiler_options = {} } = tsconfig;
 
   if (tsconfig.extends === undefined) {
     return compiler_options;
