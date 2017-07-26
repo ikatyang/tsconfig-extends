@@ -3,16 +3,16 @@
 
 
 "@types/babel-core@^6.7.14":
-  version "6.7.15"
-  resolved "https://registry.yarnpkg.com/@types/babel-core/-/babel-core-6.7.15.tgz#26e0267d777a9a356d1bae81a9d4f992d0351edc"
+  version "6.7.16"
+  resolved "https://registry.yarnpkg.com/@types/babel-core/-/babel-core-6.7.16.tgz#11096ad3efde289475c1b92e09e7ea7eace84ca6"
   dependencies:
     "@types/babel-template" "*"
     "@types/babel-traverse" "*"
     "@types/babel-types" "*"
 
 "@types/babel-template@*":
-  version "6.7.15"
-  resolved "https://registry.yarnpkg.com/@types/babel-template/-/babel-template-6.7.15.tgz#6df391cc15d0137a7b6e0ad92fef79d9ea0dce26"
+  version "6.7.16"
+  resolved "https://registry.yarnpkg.com/@types/babel-template/-/babel-template-6.7.16.tgz#6271bcddede375c4e83df9c325ce5eec058bc34f"
   dependencies:
     "@types/babel-types" "*"
     "@types/babylon" "*"
@@ -54,9 +54,9 @@
     "@types/orchestrator" "*"
     "@types/vinyl" "*"
 
-"@types/jest@20.0.4":
-  version "20.0.4"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-20.0.4.tgz#91e2c76fbe90b3a719b5d689958f0495f005beb9"
+"@types/jest@20.0.5":
+  version "20.0.5"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-20.0.5.tgz#f463e58b2de6e801f40e33b05db894babdbad98c"
 
 "@types/node@*", "@types/node@8.0.16":
   version "8.0.16"
