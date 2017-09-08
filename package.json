@@ -24,7 +24,7 @@
   "devDependencies": {
     "@types/jest": "20.0.8",
     "@types/node": "8.0.27",
-    "jest": "21.0.1",
+    "jest": "21.0.2",
     "prettier": "1.6.1",
     "prettier-config-ikatyang": "1.1.1",
     "ts-jest": "21.0.0",
