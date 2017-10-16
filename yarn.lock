@@ -6,9 +6,9 @@
   version "21.1.2"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-21.1.2.tgz#05ebfa64817b626694ced56745a7949281981048"
 
-"@types/node@8.0.37":
-  version "8.0.37"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.37.tgz#d5b1bbc942915f20f4d83ea04a2aba1df7ac9d5f"
+"@types/node@8.0.40":
+  version "8.0.40"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.40.tgz#260f0440db0643f034c9103bba0be777ce25317c"
 
 abab@^1.0.3:
   version "1.0.4"
