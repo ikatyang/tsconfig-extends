@@ -22,9 +22,9 @@
     "build": "tsc -p tsconfig.build.json"
   },
   "devDependencies": {
-    "@types/jest": "21.1.10",
+    "@types/jest": "23.3.10",
     "@types/node": "8.10.37",
-    "jest": "21.2.1",
+    "jest": "23.6.0",
     "prettier": "1.15.2",
     "prettier-config-ikatyang": "1.1.1",
     "ts-jest": "21.2.4",
